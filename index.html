@@ -16,5 +16,90 @@
             <input type="submit" value="Submit">
         </fieldset>
     </form>
+    <header>
+        <h1>Become a driver</h1>
+        <h2>
+            <a href="#">Sign up to ride</a>
+        </h2>
+    </header>
+    <main>
+        <form action="">
+            <ul>
+                <li>
+                    <span>
+                        <input type="radio" name="car" id="have" checked>
+                        <label for="I have a car">I have a car</label>
+                    </span>
+                    <span>
+                        <input type="radio" name="car" id="need">
+                        <label for="I need a car">I need a car</label>
+                    </span>
+                </li>
+                <li>
+                    <label for="fname">First name</label>
+                    <input type="text" name="fname" id="fname" placeholder="enter your first name here"> 
+                </li><br>
+                <li>
+                    <label for="sname">Surname</label>
+                    <input type="text" name="sname" id="sname" placeholder="enter your surname here">
+                </li><br>
+                <li>
+                    <label for="email">Email address</label>
+                    <input type="email" name="email" id="email" placeholder="enter your email here">
+                </li><br>
+                <li>
+                    <label for="pwd">Password</label>
+                    <input type="password" name="password" id="password" required>
+                </li><br>
+                <li>
+                    <label for="dob">Date of birth</label>
+                    <input type="date" name="dob" id="dob">
+                </li><br>
+                <li>
+                    <label for="tel">Phone number</label>
+                    <input type="tel" name="tel" id="tel">
+                </li><br>
+                <li>
+                    <label for="city">City you will drive in</label>
+                    <select>
+                        <option value="default" selected>select your city</option>
+                        <optgroup label="SOUTH WEST">
+                            <option value="Lag">Lagos</option>
+                            <option value="Akr">Akure</option>
+                        </optgroup>
+                        <optgroup label="SOUTH SOUTH">
+                            <option value="Uy">Uyo</option>
+                            <option value="P/H">Portharcourt</option>
+                        </optgroup>
+                        <optgroup label="SOUTH EAST">
+                            <option value="On">Onitsha</option>
+                            <option value="Ab">Aba</option>
+                        </optgroup>
+                        <optgroup label="NORTH CENTRAL">
+                            <option value="Abj">Abuja</option>
+                            <option value="Js">Jos</option>
+                        </optgroup>
+                    </select>
+                </li><br>
+                <li>
+                    <label for="invite">Invite code</label>
+                    <input type="number" name="invite" id="invite" min="5000" max="9999">
+                </li><br>
+                <li>
+                    <input type="checkbox" name="terms" id="terms">
+                    <label for="terms">
+                        By processing, you agree with the <a href="#">terms &amp; conditions</a> required within <a href="#">our policy</a>
+                    </label>
+                </li><br>
+                <li>
+                    <label for="upload">Upload your image</label>
+                    <input type="image" name="upload" id="upload" accept="image/png" size="2048" multiple>
+                </li><br>
+                <li>
+                    <button type="button">create an account</button>
+                </li>
+            </ul>
+        </form>
+    </main>
 </body>
 </html>
