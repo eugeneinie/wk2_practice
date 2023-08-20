@@ -1,0 +1,54 @@
+/* But to cement inheritance, you can also use the html element */ 
+html {
+    font-size: 22px;
+}
+
+/* Reserve the universal selector for special use! 
+* {
+    font-family: monospace; 
+    border: 1px solid red;         
+} */
+/* Notice how every element inherits the font size & border from the body element? */
+body {
+    /* font-size: 22px; */
+    background-color: #333;
+    color: whitesmoke;
+    border: 3px solid white; 
+    /*PS: the border did not apply to all the other elements inside the body*/
+}
+
+h1, h2 {
+    color: blue;
+}
+
+p {
+    color: magenta;
+}
+/* Notice the default waterfall setting of CSS */
+p {
+    color: yellowgreen;
+}
+
+/* Avoid using span! rather use highlight class */
+p span{
+    text-transform: uppercase;
+    background-color: silver;
+}
+
+button, input, textarea, select {
+    font: inherit;
+}
+
+.highlight {
+    text-transform: uppercase;
+    background-color: silver;
+}
+/* Erm...but class selector is more specific than element selector ;) even when it comes before element selector!  */
+.orange {
+    color: orange;
+}
+
+/* Avoid using id selectors in CSS it's best reserved for HTML & JS */
+#second {
+    font-style: italic;
+}
